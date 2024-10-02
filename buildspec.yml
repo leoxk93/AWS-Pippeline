@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Building the Docker image...
       - docker build -t pipeline-complete .
-      - docker tag pipeline-complete:latest YOUR_AWS_ACCOUNT_ID.dkr.ecr.us-east-2.amazonaws.com/pipeline-complete:latest
+      - docker tag pipeline-complete:latest 253490770873.dkr.ecr.us-east-2.amazonaws.com/pipeline-complete:latest
   post_build:
     commands:
       - echo Pushing the Docker image to ECR...
