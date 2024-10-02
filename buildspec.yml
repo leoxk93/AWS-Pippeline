@@ -9,8 +9,8 @@ phases:
     commands:
       - echo Building the Docker image...
       - docker build -t pipeline-complete .
-      - docker tag pipeline-complete:latest 253490770873.dkr.ecr.us-east-2.amazonaws.com/pipeline-complete:latest
+      - docker tag pipeline-complete:latest 253490770873.dkr.ecr.us-east-2.amazonaws.com/internship/lp-registry-test:latest
   post_build:
     commands:
       - echo Pushing the Docker image to ECR...
-      - docker push 253490770873.dkr.ecr.us-east-2.amazonaws.com/pipeline-complete:latest
+      - docker push 253490770873.dkr.ecr.us-east-2.amazonaws.com/internship/lp-registry-test:latest
